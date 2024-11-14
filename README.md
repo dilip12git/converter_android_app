@@ -33,7 +33,7 @@ This project uses several libraries to enhance the UI and functionality:
   
 ## Getting Started
 **Prerequisites**
-- **Android Studio**: Download and install ![Android Studio](https://developer.android.com/).
+- **Android Studio**: Download and install [Android Studio](https://developer.android.com/).
 - **Java SDK**: Ensure you have Java SDK installed (Android Studio manages this automatically for most users).
 
 **Installation**
@@ -49,3 +49,11 @@ This project uses several libraries to enhance the UI and functionality:
  4. **Run the App:**
      - Connect an Android device or use an emulator.
      - Click on the "Run" button in Android Studio.
+
+## Navigation and UI
+The app uses a **RecyclerView** to display lists of options for each converter type. Here's an example of setting up a **RecyclerView adapter** in Java:
+```java
+recyclerView = findViewById(R.id.recycler_view); // Initialize RecyclerView
+recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+recyclerView.setAdapter(adapter);
+
