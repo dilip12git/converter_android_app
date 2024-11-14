@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:padding="10dp"
+        android:elevation="2dp"
+     >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="@string/cgpa_and_cgpa_percentile_calculator"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/card_border"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/numberOfTermsInput"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_border"
+        android:padding="10dp"
+        android:textColorHint="@color/dark"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:hint="@string/enter_number_of_terms"
+        android:inputType="number" />
+
+
+
+    <!-- Add terms button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addTermButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_terms"
+        app:cornerRadius="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:backgroundTint="@color/blue"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@android:color/white" />
+</LinearLayout>
+    <!-- Scrollable area for terms and subjects input -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/card_border"
+        android:elevation="2dp">
+
+        <LinearLayout
+            android:id="@+id/termLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <!-- Calculate CGPA button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_cgpa"
+        app:cornerRadius="10dp"
+        android:backgroundTint="@color/blue"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

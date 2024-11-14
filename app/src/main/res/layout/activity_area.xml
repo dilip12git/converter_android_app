@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Area">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/blue"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/unit_converter" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    <!-- Kmsq to Sqm Conversion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/card_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/killometer_sq_to_meter_sq"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="@string/killometer_sq" />
+
+                <EditText
+                    android:id="@+id/kmsq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:inputType="numberDecimal"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/arrow"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="@string/meter_square" />
+
+                <EditText
+                    android:id="@+id/sqm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+
+                    android:inputType="numberDecimal"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Sqm to FTsq Conversion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/card_border"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meterquare"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="@string/meter_square" />
+
+                <EditText
+                    android:id="@+id/ftsqm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/arrow"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="@string/foot_square" />
+
+                <EditText
+                    android:id="@+id/ftsq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+
+                    android:inputType="numberDecimal"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Acre to Ftsq Conversion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/card_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/acre_to_foot_square"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="Acre" />
+
+                <EditText
+                    android:id="@+id/acre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/arrow"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="@string/foot_square" />
+
+                <EditText
+                    android:id="@+id/aftsq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+
+                    android:inputType="numberDecimal"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Hectare to metersq Conversion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/card_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hectare to Meter Square"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="Hectare" />
+
+                <EditText
+                    android:id="@+id/hectare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+
+                    android:inputType="numberDecimal"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/arrow"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark"
+                    android:text="@string/meter_square" />
+
+                <EditText
+                    android:id="@+id/hmsq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_the_value_of_inch"
+                    android:background="@drawable/card_border"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+
+                    android:inputType="numberDecimal"
+                    android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
