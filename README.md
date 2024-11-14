@@ -23,3 +23,29 @@ This project uses several libraries to enhance the UI and functionality:
 - **CardView**: Used for presenting content with cards.
   ```gradle
   implementation 'androidx.cardview:cardview:1.0.0'
+- **RecyclerView**: Used for displaying lists and grids of data.
+  ```gradle
+  implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+- **Material Design Components**: Provides modern UI components based on Material Design.
+  ```gradle
+  implementation 'com.google.android.material:material:1.5.0'
+  
+## Getting Started
+**Prerequisites**
+- **Android Studio**: Download and install ![Android Studio](https://developer.android.com/).
+- **Java SDK**: Ensure you have Java SDK installed (Android Studio manages this automatically for most users).
+
+**Installation**
+ 1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/dilip12git/converter_android_app.git
+    cd converter_android_app
+ 2. **Open in Android Studio:**
+    - Open Android Studio and select Open an Existing Project.
+    - Navigate to the cloned directory and open it.
+ 3. **Sync Project with Gradle Files:**
+     - Android Studio should automatically prompt you to sync Gradle files.
+ 4. **Run the App:**
+     - Connect an Android device or use an emulator.
+     - Click on the "Run" button in Android Studio.
