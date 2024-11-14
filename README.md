@@ -14,7 +14,7 @@ The **Converter App** is an Android application built using Java in Android Stud
 
 ## [Converter.APK](https://drive.google.com/file/d/1Y2zYvmyMpsuVuXIJ1zCCJ50q9-l5rKSc/view?usp=sharing)
 
-![Untitled design](https://github.com/user-attachments/assets/583d5f4b-ab47-4a12-8b3c-3fdae6c8c219)
+<img src="https://github.com/user-attachments/assets/583d5f4b-ab47-4a12-8b3c-3fdae6c8c219" width="300" height="500" alt="Demo">
 
 
 ## Dependencies
